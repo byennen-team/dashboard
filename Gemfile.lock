@@ -5,6 +5,7 @@ GEM
     atomic (1.1.16)
     backports (3.6.0)
     buftok (0.2.0)
+    coderay (1.1.0)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
@@ -30,12 +31,21 @@ GEM
     http (0.5.0)
       http_parser.rb
     http_parser.rb (0.6.0)
+    httparty (0.13.0)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     json (1.8.1)
     memoizable (0.4.1)
       thread_safe (~> 0.2.0)
+    method_source (0.8.2)
     multi_json (1.9.0)
+    multi_xml (0.5.5)
     multipart-post (2.0.0)
     naught (1.0.0)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
@@ -44,6 +54,8 @@ GEM
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.3.3)
+    shotgun (0.9)
+      rack (>= 1.0)
     simple_oauth (0.2.0)
     sinatra (1.4.4)
       rack (~> 1.4)
@@ -56,6 +68,7 @@ GEM
       rack-test
       sinatra (~> 1.4.0)
       tilt (~> 1.3)
+    slop (3.5.0)
     sprockets (2.12.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -88,4 +101,7 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  httparty
+  pry
+  shotgun
   twitter (>= 5.0.0)
